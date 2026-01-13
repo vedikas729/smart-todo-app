@@ -1,4 +1,4 @@
-# Frontend (React/Node.js)
+# Frontend
 frontend/node_modules/
 frontend/build/
 frontend/dist/
@@ -8,50 +8,20 @@ frontend/.env.development.local
 frontend/.env.test.local
 frontend/.env.production.local
 frontend/npm-debug.log*
-frontend/yarn-debug.log*
-frontend/yarn-error.log*
 
-# Backend (Java/Maven)
-backend/**/target/
-backend/**/*.class
-backend/**/*.jar
-backend/**/*.war
-backend/**/*.ear
-backend/**/*.iml
-backend/**/.idea/
+# Environment variables
+.env
+.env.local
 
-# Gradle (if Gradle is used instead of Maven)
-backend/**/.gradle/
-backend/**/build/
-
-# IDE specific
+# IDE
 .idea/
 .vscode/
 *.swp
 *.swo
-*~
-*.iml
 
-# OS specific
+# OS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
-
-# AWS and Secrets
-.aws/
-*.pem
-aws-credentials.json
-.env
 
 # Logs
 *.log
-logs/
-
-# Compiled files
-*.class
-*.jar
-*.war
