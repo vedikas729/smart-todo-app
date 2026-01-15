@@ -138,17 +138,17 @@ export const getEstimationStats = async (userId) => {
   
   const avgAccuracy = accuracies.reduce((sum, acc) => sum + acc, 0) / accuracies.length
 
-  // If avgAccuracy > 1, user underestimates (tasks take longer)
-  // If avgAccuracy < 1, user overestimates (tasks take less time)
+  // If avgAccuracy > 1, user underestimates
+  // If avgAccuracy < 1, user overestimates
   const underestimatePercentage = ((avgAccuracy - 1) * 100).toFixed(1)
 
   return {
     totalCompletedTasks: data.length,
     averageAccuracy: avgAccuracy.toFixed(2),
     underestimatePercentage: underestimatePercentage,
-    message: avgAccuracy > 1.1 
+    message: avgAccuracy >= 1.1 
       ? `You typically underestimate by ${Math.abs(underestimatePercentage)}%`
-      : avgAccuracy < 0.9
+      : avgAccuracy <= 0.9
       ? `You typically overestimate by ${Math.abs(underestimatePercentage)}%`
       : 'Your estimates are pretty accurate!'
   }
