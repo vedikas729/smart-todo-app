@@ -1,5 +1,16 @@
 import { supabase } from '../supabaseClient'
 
+// ==================== USERS ====================
+
+export const updateUserName = async (newName) => {
+  const { data, error } = await supabase.auth.updateUser({
+    data: { name: newName }
+  });
+
+  if (error) throw error;
+  return data.user;
+};
+
 // ==================== TASKS ====================
 
 export const createTask = async (taskData) => {
