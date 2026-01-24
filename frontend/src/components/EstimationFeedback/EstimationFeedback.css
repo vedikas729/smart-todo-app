@@ -1,0 +1,79 @@
+.estimation-feedback {
+  width: 100%;
+  margin: 1rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.estimation-feedback.loading,
+.estimation-feedback.empty {
+  text-align: center;
+  color: #666;
+}
+
+.estimation-feedback h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-card {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.stat-card.accurate {
+  background: #e8f5e9;
+  border-color: #28a745;
+}
+
+.stat-card.inaccurate {
+  background: #fff3cd;
+  border-color: #ffc107;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card.accurate .stat-value {
+  color: #28a745;
+}
+
+.stat-card.inaccurate .stat-value {
+  font-size: 2.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.accuracy-tip {
+  padding: 1rem;
+  background: #f0f4ff;
+  border-left: 4px solid #667eea;
+  border-radius: 4px;
+}
+
+.accuracy-tip p {
+  margin: 0;
+  color: #333;
+}
