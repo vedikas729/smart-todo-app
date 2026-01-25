@@ -2,13 +2,13 @@
 
 A productivity app that helps you plan realistically by forcing time estimation and tracking your accuracy over time.
 
-## 🌐 Live Demo
+## Live Demo
 
 **[Try it live here!](https://smart-todo-app-vedikas729.netlify.app/)**
 
-No installation required - just visit the link, sign up, and start organizing your tasks!
+No installation required - just visit the link, sign up, and start organizing your tasks.
 
-## ✨ Features
+## Features
 
 - **Smart 3-Step Task Creation** - Guided flow forces thoughtful planning
 - **Automatic Task Breakdown** - Large tasks (>1 hour) prompt for subtask creation
@@ -17,7 +17,7 @@ No installation required - just visit the link, sign up, and start organizing yo
 - **Secure Authentication** - Your data is private and secure
 - **Beautiful UI** - Clean, modern, responsive design
 
-## 🎯 Why This App?
+## Why This App?
 
 Most todo apps let you dump endless tasks without thinking. This app makes you:
 1. **Be specific** about what you'll do
@@ -25,14 +25,14 @@ Most todo apps let you dump endless tasks without thinking. This app makes you:
 3. **Track accuracy** to improve over time
 4. **Focus on today** instead of being overwhelmed
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** React, JavaScript, CSS
 - **Backend:** Supabase (PostgreSQL + Auto-generated REST API)
 - **Authentication:** Supabase Auth (email/password)
 - **Hosting:** Netlify (frontend), Supabase Cloud (backend/database)
 
-## 🏗️ Architecture
+## Architecture
 ```
 React Frontend (Netlify) 
     ↓
@@ -44,7 +44,7 @@ Supabase Cloud (Backend)
     └── Authentication System
 ```
 
-## 📁 Project Structure
+## Project Structure
 ```
 smart-todo-app/
 ├── frontend/              # React application
@@ -70,7 +70,7 @@ smart-todo-app/
 └── README.md
 ```
 
-## 🚀 Deployment
+## Deployment
 
 This app is deployed using:
 - **Frontend:** Netlify (automatically deploys from main branch)
